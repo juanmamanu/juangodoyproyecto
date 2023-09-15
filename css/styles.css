@@ -1,0 +1,97 @@
+/*el asterisco es un selector universal*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*PUEDEN IMPORTAR FUENTES DESDE GOOGLE FONTS SOLO USANDO LINKS*/
+
+/* ----------------Estilos directos----------------------*/
+
+/*PUEDEN DESCARGAR Y USARLA CON FONTFACE*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EEE0CB;
+}
+
+header {
+    background-color:#ffffff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+}
+
+hr.rounded {
+    border-top: 8px solid #000000;
+    border-radius: 5px;
+}
+
+
+/*---------------------ID individual--------------------*/
+
+/*WIDTH Y HEIGHT*/
+.articulo {
+    background-color:#5DA399;
+    width: 350px; /* ancho */
+    height: 250px; /* alto */   
+    margin: 10px 10px 10px 10px;
+    padding: 25px;
+    /*border*/
+    border: solid 3px #35393C;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
+.img_articulo {
+    display: block;
+    margin: 0 auto;
+    width: 330px;
+    height: 250px;
+}
+
+/*--------------------------------nav bar---------------------------------*/
+
+.navbarcolor{
+    background-color: #64ACC1;
+    
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    height: 250px;
+    overflow: auto;
+}
+
+/*--------------------------------footer---------------------------------*/
+.foote{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.whatsapp {
+    width: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.container {
+    width: auto;
+    max-width: 85vw;
+    padding: 0 15px;
+}
