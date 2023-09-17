@@ -17,7 +17,7 @@ header {
     top: 0;
     position: relative; 
     text-align: center; 
-    width: 100%; 
+    max-width: 100%; 
     height: 35vh; 
     overflow: hidden;
 }
@@ -34,7 +34,7 @@ hr.rounded {
 /*WIDTH Y HEIGHT*/
 
 .articulo {
-    background-color:#5DA399;
+    background-color:#64ACC1;
     width: 350px; /* ancho */
     height: 250px; /* alto */   
     margin: 10px 10px 10px 10px;
@@ -53,8 +53,9 @@ hr.rounded {
 
 /*--------------------------------nav bar---------------------------------*/
 
-.navbarcolor{
+.navbar{
     background-color: #64ACC1;
+    font-size: 20px;
 }
 
 .logo {
@@ -80,9 +81,33 @@ hr.rounded {
 
 
 
+/*-card- */
 
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 
+@media (min-width: 768px) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
 
+@media (min-width: 992px) {
+    .container-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.ventas {
+    height: 250px;
+}
 /*--------------------------------footer---------------------------------*/
 .foote{
     background-color: gray;
@@ -92,12 +117,6 @@ hr.rounded {
     
 }
 
-.whatsapp {
-    width: 50px;
-    position: fixed;
-    bottom: 0;
-    right: 10px;
-}
 
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -108,4 +127,61 @@ input[type=text], select, textarea {
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+
+#jardin, #cocina, #dormitorio, #todas {
+    display: none;
+}
+
+.jardin, .cocina, .dormitorio {
+    display: none;
+}
+
+#jardin:checked ~ .container-cards .jardin,
+#cocina:checked ~ .container-cards .cocina,
+#dormitorio:checked ~ .container-cards .dormitorio
+{
+    display: flex;
+}
+
+#todas:checked ~ .container-cards .jardin,
+#todas:checked ~ .container-cards .cocina, 
+#todas:checked ~ .container-cards .dormitorio{
+    display: flex;
+}
+
+.container-opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (min-width: 560px) {
+    .container-opciones {
+        flex-direction: row;
+    }
+}
+
+.container-opciones label {
+    border: solid 1px;
+    padding: 8px 15px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container-opciones label:hover {
+    background-color: #64ACC1;
+    border: none;
+}
+
+#jardin:checked ~ .container-opciones .label-jardin,
+#cocina:checked ~ .container-opciones .label-cocina,
+#dormitorio:checked ~ .container-opciones .label-dormitorio,
+#todas:checked ~ .container-opciones .label-todas {
+    background-color: #64ACC1;
 }
