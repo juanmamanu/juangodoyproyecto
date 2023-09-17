@@ -8,4 +8,5 @@ Cambiar el boton de la card
 footer 
 redes sociales andando NO
 Boton adres 
-Galeria
+
+Galeria sin hacer 

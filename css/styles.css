@@ -2,24 +2,26 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-/*PUEDEN IMPORTAR FUENTES DESDE GOOGLE FONTS SOLO USANDO LINKS*/
 
-/* ----------------Estilos directos----------------------*/
-
-/*PUEDEN DESCARGAR Y USARLA CON FONTFACE*/
 
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #EEE0CB;
+
 }
 
 header {
     background-color:#ffffff;
-    padding: 10px 0;
-    position: sticky;
     top: 0;
+    position: relative; 
+    text-align: center; 
+    width: 100%; 
+    height: 35vh; 
+    overflow: hidden;
 }
+
 
 hr.rounded {
     border-top: 8px solid #000000;
@@ -30,6 +32,7 @@ hr.rounded {
 /*---------------------ID individual--------------------*/
 
 /*WIDTH Y HEIGHT*/
+
 .articulo {
     background-color:#5DA399;
     width: 350px; /* ancho */
@@ -52,7 +55,6 @@ hr.rounded {
 
 .navbarcolor{
     background-color: #64ACC1;
-    
 }
 
 .logo {
@@ -62,6 +64,24 @@ hr.rounded {
     height: 250px;
     overflow: auto;
 }
+
+.img_nav{
+    object-fit: cover;
+}
+
+.h1_nav
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white;
+}
+
+
+
+
+
 
 /*--------------------------------footer---------------------------------*/
 .foote{
@@ -88,10 +108,4 @@ input[type=text], select, textarea {
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-.container {
-    width: auto;
-    max-width: 85vw;
-    padding: 0 15px;
 }
