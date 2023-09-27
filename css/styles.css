@@ -28,6 +28,10 @@ hr.rounded {
     border-radius: 5px;
 }
 
+p{
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 10px 10px 10px;
+}
 
 /*---------------------ID individual--------------------*/
 
@@ -109,12 +113,8 @@ hr.rounded {
     height: 250px;
 }
 /*--------------------------------footer---------------------------------*/
-.foote{
+.footer{
     background-color: gray;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    
 }
 
 
@@ -125,11 +125,11 @@ input[type=text], select, textarea {
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
+    margin-bottom: 1px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-
+/*-----------------------page shop---------------------*/
 
 #jardin, #cocina, #dormitorio, #todas {
     display: none;
