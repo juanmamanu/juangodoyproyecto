@@ -125,7 +125,18 @@ input[type=text], select, textarea {
     margin-bottom: 1px;
     resize: vertical;
 }
+.container-opciones label {
+    border: solid 1px;
+    padding: 8px 15px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
 
+.container-opciones label:hover {
+    background-color: #64ACC1;
+    border: none;
+}
 .container-opciones label:hover {
     background-color: #64ACC1;
     border: none;
