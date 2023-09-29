@@ -58,25 +58,6 @@ header {
     
 }
 
-/* Articles */
-.article-card {
-    background-color: #64ACC1;
-    width: 350px;
-    height: 250px;   
-    margin: 10px;
-    padding: 25px;
-    border: solid 3px #35393C;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-}
-
-.article-image {
-    display: block;
-    margin: 0 auto;
-    width: 330px;
-    height: 250px;
-}
-
 /* Cards */
 .container-cards {
     display: flex;
@@ -125,6 +106,7 @@ input[type=text], select, textarea {
     margin-bottom: 1px;
     resize: vertical;
 }
+
 .container-opciones label {
     border: solid 1px;
     padding: 8px 15px;
@@ -133,23 +115,51 @@ input[type=text], select, textarea {
     cursor: pointer;
 }
 
-.container-opciones label:hover {
-    background-color: #64ACC1;
-    border: none;
-}
-.container-opciones label:hover {
-    background-color: #64ACC1;
-    border: none;
-}
 
+/*-----------------------page shop---------------------*/
+#jardin, #cocina, #dormitorio, #todas {
+    display: none;
+}
+.jardin, .cocina, .dormitorio {
+    display: none;
+}
+#jardin:checked ~ .container-cards .jardin,
+#cocina:checked ~ .container-cards .cocina,
+#dormitorio:checked ~ .container-cards .dormitorio
+{
+    display: flex;
+}
+#todas:checked ~ .container-cards .jardin,
+#todas:checked ~ .container-cards .cocina, 
+#todas:checked ~ .container-cards .dormitorio{
+    display: flex;
+}
+.container-opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+@media (min-width: 560px) {
+    .container-opciones {
+        flex-direction: row;
+    }
+}
+.container-opciones label {
+    border: solid 1px;
+    padding: 8px 15px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+.container-opciones label:hover {
+    background-color: #64ACC1;
+    border: none;
+}
 #jardin:checked ~ .container-opciones .label-jardin,
 #cocina:checked ~ .container-opciones .label-cocina,
 #dormitorio:checked ~ .container-opciones .label-dormitorio,
 #todas:checked ~ .container-opciones .label-todas {
     background-color: #64ACC1;
 }
-
-/* Shop Page */
-
-
-/* ...  ... */
