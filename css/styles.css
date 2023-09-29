@@ -126,6 +126,18 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 
+.container-opciones label:hover {
+    background-color: #64ACC1;
+    border: none;
+}
+
+#jardin:checked ~ .container-opciones .label-jardin,
+#cocina:checked ~ .container-opciones .label-cocina,
+#dormitorio:checked ~ .container-opciones .label-dormitorio,
+#todas:checked ~ .container-opciones .label-todas {
+    background-color: #64ACC1;
+}
+
 /* Shop Page */
 
 
