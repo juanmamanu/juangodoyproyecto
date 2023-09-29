@@ -1,19 +1,28 @@
-/*el asterisco es un selector universal*/
+/* Estilos Base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #EEE0CB;
-
+    text-align: center; /* Centrar contenidos */
 }
 
+hr.rounded {
+    border-top: 8px solid #000000;
+    border-radius: 5px;
+}
+
+p {
+    margin: 10px;
+}
+
+/* Header */
 header {
-    background-color:#ffffff;
+    background-color: #ffffff;
     top: 0;
     position: relative; 
     text-align: center; 
@@ -22,42 +31,8 @@ header {
     overflow: hidden;
 }
 
-
-hr.rounded {
-    border-top: 8px solid #000000;
-    border-radius: 5px;
-}
-
-p{
-    font-family: 'Montserrat', sans-serif;
-    margin: 10px 10px 10px 10px;
-}
-
-/*---------------------ID individual--------------------*/
-
-/*WIDTH Y HEIGHT*/
-
-.articulo {
-    background-color:#64ACC1;
-    width: 350px; /* ancho */
-    height: 250px; /* alto */   
-    margin: 10px 10px 10px 10px;
-    padding: 25px;
-    /*border*/
-    border: solid 3px #35393C;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
-}
-.img_articulo {
-    display: block;
-    margin: 0 auto;
-    width: 330px;
-    height: 250px;
-}
-
-/*--------------------------------nav bar---------------------------------*/
-
-.navbar{
+/* Navigation */
+.navbar {
     background-color: #64ACC1;
     font-size: 20px;
 }
@@ -70,23 +45,39 @@ p{
     overflow: auto;
 }
 
-.img_nav{
+.img-nav {
     object-fit: cover;
 }
 
-.h1_nav
-{
+.h1-nav {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
     color: white;
+    
 }
 
+/* Articles */
+.article-card {
+    background-color: #64ACC1;
+    width: 350px;
+    height: 250px;   
+    margin: 10px;
+    padding: 25px;
+    border: solid 3px #35393C;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+}
 
+.article-image {
+    display: block;
+    margin: 0 auto;
+    width: 330px;
+    height: 250px;
+}
 
-/*-card- */
-
+/* Cards */
 .container-cards {
     display: flex;
     flex-direction: column;
@@ -112,76 +103,30 @@ p{
 .ventas {
     height: 250px;
 }
-/*--------------------------------footer---------------------------------*/
-.footer{
-    background-color: gray;
+
+/* Footer */
+.footer {
+    background-color: #64ACC1;
 }
 
+footer .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
+/* Form styles */
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 1px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 1px;
+    resize: vertical;
 }
 
-/*-----------------------page shop---------------------*/
+/* Shop Page */
 
-#jardin, #cocina, #dormitorio, #todas {
-    display: none;
-}
 
-.jardin, .cocina, .dormitorio {
-    display: none;
-}
-
-#jardin:checked ~ .container-cards .jardin,
-#cocina:checked ~ .container-cards .cocina,
-#dormitorio:checked ~ .container-cards .dormitorio
-{
-    display: flex;
-}
-
-#todas:checked ~ .container-cards .jardin,
-#todas:checked ~ .container-cards .cocina, 
-#todas:checked ~ .container-cards .dormitorio{
-    display: flex;
-}
-
-.container-opciones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-@media (min-width: 560px) {
-    .container-opciones {
-        flex-direction: row;
-    }
-}
-
-.container-opciones label {
-    border: solid 1px;
-    padding: 8px 15px;
-    width: 150px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.container-opciones label:hover {
-    background-color: #64ACC1;
-    border: none;
-}
-
-#jardin:checked ~ .container-opciones .label-jardin,
-#cocina:checked ~ .container-opciones .label-cocina,
-#dormitorio:checked ~ .container-opciones .label-dormitorio,
-#todas:checked ~ .container-opciones .label-todas {
-    background-color: #64ACC1;
-}
+/* ...  ... */

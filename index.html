@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
 
 <!--------------- Link a bootstrap---------------------------->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 <!-------------LINK A CSS-------------------->
     <link rel="stylesheet" href="css/styles.css">
     <title>Todo Muebles</title>
+
 </head>
 <body>
 
-<!-------------------nav bar------------------------------------>
+<!-------------------NAV BAR------------------------------------>
+
   <nav class="navbar navbar-expand-lg sticky-top ">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Inicio</a>
@@ -27,16 +30,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="pages/galeria.html">Galeria</a>
+              <a class="nav-link " aria-current="page" href="pages/galeria.html">Galeria</a>   <!-----href links--------->
             </li>
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="pages/shop.html">Shop!</a>
+              <a class="nav-link " aria-current="page" href="pages/shop.html">Shop!</a> <!-----href links--------->
             </li>
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="pages/historia.html">Historia</a>
+              <a class="nav-link " aria-current="page" href="pages/historia.html">Historia</a> <!-----href links--------->
             </li>
             <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="pages/contacto.html">Contacto</a>
+              <a class="nav-link " aria-current="page" href="pages/contacto.html">Contacto</a> <!-----href links--------->
             </li>
           </ul>
         </div>
@@ -44,10 +47,9 @@
   </nav>
 
 <!-----------------------------------------header---------------------------------->
-
+        <!-----carusel--------->
   <header id="carouselExample" class="carousel " data-bs-ride="carousel">
     <div class="carousel-inner">
-
       <div class="carousel-item active">
         <img src="img/logo.jpg" class="d-block w-100" alt="Primera imagen"><!-- Imagen de fondo -->
       </div>
@@ -68,10 +70,13 @@
     </button>
     
     <!-- Texto centrado -->
-    <h1 class="h1_nav">
-      Muebleria Mere
-    </h1>
-    
+  <div class="container h1-nav">
+      <div class="text-center my-5">
+          <h1 class="fw-bolder">Muebleria Mere</h1>
+          <p class="lead mb-0">Muebles que dan estilo a tu vida </p>
+      </div>
+  </div>
+  
   </header>
 
 <!------------------------------main--------------------------->
@@ -81,178 +86,166 @@
   <main class="my-5 ">
   
   <section class="container">
-  <!-----cards--------->
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/dormitorio.jpg" class="card-img-top" alt="Articulos de dormitorio">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <a href="#" class="btn btn-primary btn-sm">Go somewhere</a>
-              </div>
-          </div>
-        </div>
-  <!-----cards--------->
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/jardin.jpg" class="card-img-top" alt="Articulos de jardin ">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary btn-sm">Go somewhere</a>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-----cards--------->
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/dormitorio.jpg" class="card-img-top" alt="Articulos de dormitorio">
+            <div class="card-body">
+              <h5 class="card-title">Muebles para dormitorio</h5>
+              <p class="card-text">¡Descubre nuestra selección de muebles de dormitorio! Estilos únicos para crear tu refugio ideal. ¡Haz clic y renueva tus espacios! ✨🛌 #DiseñoYConfort</p>
+              <a href="#" class="btn btn-primary btn-sm">Go Shop</a>
             </div>
+        </div>
+      </div>
+  <!-----cards--------->
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/jardin.jpg" class="card-img-top" alt="Articulos de jardin ">
+            <div class="card-body">
+              <h5 class="card-title">Muebles de Jardin</h5>
+              <p class="card-text">¡Transforma tu jardín en un paraíso! Explora muebles resistentes y estilosos. Haz clic y dale vida al aire libre! 🌿🪑 #OasisExterior</p>
+              <a href="#" class="btn btn-primary btn-sm">Go Shop</a>
           </div>
         </div>
+      </div>
   <!-----cards--------->
-        <div class="col">
-          <div class="card h-100">
-            <img src="img/cocina.jpg" class="card-img-top" alt="articulos de cocina">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <a href="#" class="btn btn-primary btn-sm">Go somewhere</a>
-              </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/cocina.jpg" class="card-img-top" alt="articulos de cocina">
+            <div class="card-body">
+              <h5 class="card-title">Muebles de cocina</h5>
+              <p class="card-text">¡Cocina con estilo! Encuentra muebles modernos y funcionales para el corazón de tu hogar. ¡Haz clic y descubre! 🍳👩‍🍳 #Cocinastyle</p>
+              <a href="#" class="btn btn-primary btn-sm">Go Shop</a>
+            </div>
         </div>
       </div>
     </div>
-    </section>
+  </section>
 
   </main>
 
 <!------------------------------- section 2 ---------------------------------->
 <hr class="featurette-divider"><!--soy un separador-->
-  
+  <!-----section2.1 --------->
 <section>
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
-            <img src="img/cocina.jpg" class="img-fluid" alt="...">
+          <img src="img/habitacionsony.png" class="img-fluid" alt="...">
         </div>
-        <div class="col-sm-8">
+        <div class="col-sm-8 ">
           <div class="row">
             <div class="col">
               <p>
-                A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
-              </p>
-              <p>
-                And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+                Adéntrate en un dormitorio donde el futuro se manifiesta hoy: diseñado por Mere en colaboración con Sony. Muebles con diseño futurista, líneas elegantes y acabados metálicos se fusionan con la más avanzada tecnología. Destellos de iluminación LED crean ambientes adaptables, mientras que los últimos gadgets tecnológicos, cortesía de Sony, se integran sutilmente en cada rincón. Aquí, el descanso tradicional se encuentra con la innovación, ofreciendo una experiencia única para aquellos amantes de lo tech. 🛌🌌🔌 #HabitaciónFuturista
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-<hr class="featurette-divider"><!--soy un separador-->
 
+<hr class="featurette-divider"><!--soy un separador-->
+  <!-----section2.2 --------->
     <div class="container">
       <div class="row">
         <div class="col-sm-4">
-            <img src="img/cocina.jpg" class="img-fluid" alt="...">
+            <img src="img/exteriorpatio.jpg" class="img-fluid" alt="...">
         </div>
         <div class="col-sm-8">
           <div class="row">
             <div class="col">
               <p>
-                A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
-              </p>
-              
-              <p>
-                And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+                Desde la ventana, se despliega un espectáculo de diseño al aire libre: el patio, magistralmente amueblado por Mere, revela una perfecta armonía entre naturaleza y confort. Exquisitos muebles resistentes al clima, diseñados para durar, se yuxtaponen con áreas verdes exuberantes y elementos decorativos cautivadores. Cada detalle, desde las fuentes burbujeantes hasta la delicada iluminación ambiental, refleja un equilibrio sublime entre estética, durabilidad y función. Aquí, todo está pensado para que disfrutes de cada momento. Un oasis privado que invita a la relajación, al encuentro y a celebrar la vida al aire libre. 🌿🪑🌼 #OasisUrbanoPerfecto
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </section>
-
-    
     <hr class="featurette-divider"><!--soy un separador-->
     
-<!------------------------redes, links, etc------------------------------->
-
-  <section class="my-5">
-    <div class="container">
-      <div class="row align-items-start">
-        <div class="col">
-          <ul class="list-unstyled ">
-            <li class="ms-3"><a class="link-body-emphasis" href="img/facebookicon.jpg"><img src="img/twittericon.jpg" width="24" height="24"></a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <ul class="list-unstyled">
-            <li class="ms-3"><a class="link-body-emphasis" href="img/facebookicon.jpg"><img src="img/instagramicon.jpg" width="32" height="24"></a></li>
-          </ul>
-        </div>
-        <div class="col">
-          <ul class="list-unstyled">
-            <li class="ms-3"><a class="link-body-emphasis" href="img/facebookicon.jpg"><img src="img/facebookicon.jpg" width="24" height="24"></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
+<!---------------------section 3--------------------------->
+  <!-----youtube --------->
+  <section class="">
     <div class="container">
       <div class="row">
         <div class="col align-self-start">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/oZQbxMNp2Ag?si=X88ZCqJiv_jrkKz2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe width="500" height="315" src="https://www.youtube.com/embed/oZQbxMNp2Ag?si=X88ZCqJiv_jrkKz2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
+        <!-----maps --------->
         <div class="col align-self-end">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13128.118065268158!2d-58.41187061765638!3d-34.65395750238811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb98af871b97%3A0x69773165058b7bf8!2sImperio%20Deco!5e0!3m2!1ses!2sar!4v1694967019796!5m2!1ses!2sar" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13128.118065268158!2d-58.41187061765638!3d-34.65395750238811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb98af871b97%3A0x69773165058b7bf8!2sImperio%20Deco!5e0!3m2!1ses!2sar!4v1694967019796!5m2!1ses!2sar" width="500" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
-  
+        <!-----redes sociales --------->
+  <div class="container">
+      <div class="row align-items-start">
+        <div class="col">
+          <ul class="list-unstyled ">
+            <li class="ms-3"><a class="link-body-emphasis" href="https://twitter.com/"><img src="img/twittericon.jpg" width="30" height="30"></a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="list-unstyled">
+            <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/"><img src="img/instagramicon.jpg" width="35" height="30"></a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="list-unstyled">
+            <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/"><img src="img/facebookicon.jpg" width="30" height="30"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
-  <hr class="featurette-divider"><!--soy un separador-->
+  
 <!-----------------------------------------footer-------------------  Modificar -->
     
-  
-        <footer class="footer">
-          <div class="container py-5">
-          <div class="row">
-            <div class="col-6 col-md-2 mb-3">
+<hr class="featurette-divider">    <!--soy un separador-->
+
+<footer class="footer">
+  <div class="container ">
+      <div class="row">
+          <div class="col-6 col-md-2 mb-3">
               <h5>Section</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
               </ul>
-            </div>
-
-            <div class="col-6 col-md-2 mb-3">
+          </div>
+          <div class="col-6 col-md-2 mb-3">
               <h5>Section</h5>
               <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
               </ul>
-            </div>
-
-            <div class="col-md-5 offset-md-1 mb-3">
+          </div>
+          <div class="col-md-5 offset-md-1 mb-3">
               <form>
-                <h5>Subscribe to our newsletter</h5>
-                <p>Monthly digest of what's new and exciting from us.</p>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden">Email address</label>
-                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                  <button class="btn btn-primary" type="button">Subscribe</button>
-                </div>
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Monthly digest of what's new and exciting from us.</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                      <label for="newsletter1" class="visually-hidden">Email address</label>
+                      <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                      <button class="btn btn-primary" type="submit">Subscribe</button>
+                  </div>
               </form>
-            </div>
           </div>
-
-          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p>&copy; 2023 Company, Inc. All rights reserved.</p>
-          </div>
-          <p class="float-end"><a href="#">Arriba</a></p> <!---img flecha Modificar -->
-        </div>
-      </footer>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+          <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
     
     
 <!--LINK JAVA-->
