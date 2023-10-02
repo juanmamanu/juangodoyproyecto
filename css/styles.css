@@ -24,7 +24,7 @@ hr.rounded {
 /* Navigation */
 .navbar {
   background-color: #64ACC1;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .logo {
@@ -51,6 +51,11 @@ h1 {
   background-color: #EEE0CB;
   color: #64ACC1;
   display: inline-block;
+}
+
+h5 {
+  font-size: 23px;
+  font-weight: bold;
 }
 
 /* Header */
@@ -96,6 +101,7 @@ input[type=text], select, textarea {
 
 p {
   margin: 10px;
+  font-weight: 500;
 }
 
 .card {
