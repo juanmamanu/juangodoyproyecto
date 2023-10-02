@@ -1,0 +1,77 @@
+
+/* Cards */
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: $fuente-media;
+}
+
+@media (min-width: $tablet) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (min-width: $desktop) {
+    .container-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.ventas {
+    height: 250px;
+}
+
+
+/*-----------------------page shop---------------------*/
+#jardin, #cocina, #dormitorio, #todas {
+    display: none;
+}
+.jardin, .cocina, .dormitorio {
+    display: none;
+}
+#jardin:checked ~ .container-cards .jardin,
+#cocina:checked ~ .container-cards .cocina,
+#dormitorio:checked ~ .container-cards .dormitorio
+{
+    display: flex;
+}
+#todas:checked ~ .container-cards .jardin,
+#todas:checked ~ .container-cards .cocina, 
+#todas:checked ~ .container-cards .dormitorio{
+    display: flex;
+}
+.container-opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+@media (min-width: 560px) {
+    .container-opciones {
+        flex-direction: row;
+    }
+}
+.container-opciones label {
+    border: solid 1px;
+    padding: 8px 15px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+.container-opciones label:hover {
+    background-color:$color-secundario;
+    border: none;
+}
+#jardin:checked ~ .container-opciones .label-jardin,
+#cocina:checked ~ .container-opciones .label-cocina,
+#dormitorio:checked ~ .container-opciones .label-dormitorio,
+#todas:checked ~ .container-opciones .label-todas {
+    background-color: $color-secundario;
+}

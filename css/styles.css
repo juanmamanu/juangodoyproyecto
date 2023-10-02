@@ -1,165 +1,187 @@
+@charset "UTF-8";
 /* Estilos Base */
+/*PALETA DE COLORES*/
+/*Medidas de pantallas*/
+/*TAMAÑOS DE FUENTES*/
+/*Logo */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #EEE0CB;
-    text-align: center; /* Centrar contenidos */
+  font-family: "Montserrat", sans-serif;
+  background-color: #EEE0CB;
+  text-align: center; /* Centrar contenidos */
 }
 
 hr.rounded {
-    border-top: 8px solid #000000;
-    border-radius: 5px;
-}
-
-p {
-    margin: 10px;
-}
-
-/* Header */
-header {
-    background-color: #ffffff;
-    top: 0;
-    position: relative; 
-    text-align: center; 
-    max-width: 100%; 
-    height: 35vh; 
-    overflow: hidden;
+  border-top: 8px solid #000000;
+  border-radius: 5px;
 }
 
 /* Navigation */
 .navbar {
-    background-color: #64ACC1;
-    font-size: 20px;
+  background-color: #64ACC1;
+  font-size: 20px;
 }
 
 .logo {
-    display: block;
-    margin: 0 auto;
-    width: 800px;
-    height: 250px;
-    overflow: auto;
+  display: block;
+  margin: 0 auto;
+  width: 800px;
+  height: 250px;
+  overflow: auto;
 }
 
 .img-nav {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 .h1-nav {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    color: white;
-    
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-/* Cards */
-.container-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+h1 {
+  background-color: #EEE0CB;
+  color: #64ACC1;
+  display: inline-block;
 }
 
-@media (min-width: 768px) {
-    .container-cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-    }
-}
-
-@media (min-width: 992px) {
-    .container-cards {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-.ventas {
-    height: 250px;
+/* Header */
+header {
+  background-color: #ffffff;
+  top: 0;
+  position: relative;
+  text-align: center;
+  max-width: 100%;
+  height: 35vh;
+  overflow: hidden;
 }
 
 /* Footer */
 .footer {
-    background-color: #64ACC1;
+  background-color: #64ACC1;
 }
 
 footer .container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* Form styles */
 input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px; 
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 15px;
-    margin-bottom: 1px;
-    resize: vertical;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 15px;
+  margin-bottom: 1px;
+  resize: vertical;
 }
 
 .container-opciones label {
-    border: solid 1px;
-    padding: 8px 15px;
-    width: 150px;
-    text-align: center;
-    cursor: pointer;
+  border: solid 1px;
+  padding: 8px 15px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
 }
 
+p {
+  margin: 10px;
+}
+
+.card {
+  background-color: #C8BEB1;
+  font-size: 18px;
+  gap: 10px;
+}
+
+/* Cards */
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .container-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.ventas {
+  height: 250px;
+}
 
 /*-----------------------page shop---------------------*/
 #jardin, #cocina, #dormitorio, #todas {
-    display: none;
+  display: none;
 }
+
 .jardin, .cocina, .dormitorio {
-    display: none;
+  display: none;
 }
+
 #jardin:checked ~ .container-cards .jardin,
 #cocina:checked ~ .container-cards .cocina,
-#dormitorio:checked ~ .container-cards .dormitorio
-{
-    display: flex;
+#dormitorio:checked ~ .container-cards .dormitorio {
+  display: flex;
 }
+
 #todas:checked ~ .container-cards .jardin,
-#todas:checked ~ .container-cards .cocina, 
-#todas:checked ~ .container-cards .dormitorio{
-    display: flex;
+#todas:checked ~ .container-cards .cocina,
+#todas:checked ~ .container-cards .dormitorio {
+  display: flex;
 }
+
 .container-opciones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
+
 @media (min-width: 560px) {
-    .container-opciones {
-        flex-direction: row;
-    }
+  .container-opciones {
+    flex-direction: row;
+  }
 }
 .container-opciones label {
-    border: solid 1px;
-    padding: 8px 15px;
-    width: 150px;
-    text-align: center;
-    cursor: pointer;
+  border: solid 1px;
+  padding: 8px 15px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
 }
+
 .container-opciones label:hover {
-    background-color: #64ACC1;
-    border: none;
+  background-color: #64ACC1;
+  border: none;
 }
+
 #jardin:checked ~ .container-opciones .label-jardin,
 #cocina:checked ~ .container-opciones .label-cocina,
 #dormitorio:checked ~ .container-opciones .label-dormitorio,
 #todas:checked ~ .container-opciones .label-todas {
-    background-color: #64ACC1;
+  background-color: #64ACC1;
 }
+
+/*# sourceMappingURL=styles.css.map */

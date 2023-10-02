@@ -1,0 +1,31 @@
+/*PALETA DE COLORES*/
+
+$color-primario:#EEE0CB;
+$color-secundario:#64ACC1;
+$color-terciario: #C8BEB1;
+
+$fuente-principal: 'Montserrat', sans-serif;
+
+
+
+/*Medidas de pantallas*/
+$tablet: 768px;
+$desktop: 992px;
+$desktopXG: 1200px;
+
+/*TAMAÑOS DE FUENTES*/
+$fuente-nav: 20px;
+$fuente-media: 18px;
+$fuente-grande: 50px;
+$icono: 40px;
+
+
+/*Logo */
+
+@mixin Logo {
+display: block;
+margin: 0 auto;
+width: 800px;
+height: 250px;
+overflow: auto;
+}
