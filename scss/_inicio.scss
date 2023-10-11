@@ -9,3 +9,68 @@ background-color: $color-terciario;
 font-size: $fuente-media;
 gap: 10px;
 }
+
+.container {
+    .card {
+      transition: transform 0.3s ease-in-out; 
+  
+      &:hover {
+        transform: scale(1.05); // Esto hará que la tarjeta se agrande un 5% al pasar el ratón por encima
+      }
+    }
+  }
+
+.responsive-youtube {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+/* Estilos para las imágenes de las redes sociales */
+.redes img {
+    width: 30px; /* Un tamaño estándar para todos */
+    height: 30px; 
+    border-radius: 15px; /* Esquinas redondeadas para darle un aspecto más suave */
+    transition: transform 0.2s; /* Transición suave para el efecto hover */
+}
+
+.redes img:hover {
+    transform: scale(1.1); /* Aumenta un poco el tamaño de la imagen al pasar el cursor por encima */
+}
+
+/* Estilos para los enlaces de las redes sociales */
+.redes a.link-body-emphasis {
+    color: #333; /* Un color básico que puedes cambiar según tus preferencias */
+    text-decoration: none; /* Remueve el subrayado */
+    padding: 5px; /* Espacio alrededor del enlace para hacerlo más fácil de clicar */
+    transition: background-color 0.2s; /* Transición suave para el efecto hover */
+}
+
+.redes a.link-body-emphasis:hover {
+    background-color: #e5e5e5; /* Un fondo suave al pasar el cursor por encima */
+}
+
+/* Remover puntos de las listas y agregar márgenes a los ítems de lista */
+.redes ul.list-unstyled {
+    list-style-type: none; /* Remover puntos */
+    padding: 0; 
+}
+
+.redes li {
+    margin-bottom: 10px; /* Espacio entre ítems de lista */
+}
+
+
+

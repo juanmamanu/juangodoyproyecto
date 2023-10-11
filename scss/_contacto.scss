@@ -1,0 +1,23 @@
+.card {
+    margin: 20px 0;
+
+    @media (min-width: $tablet) {
+        margin: 40px 0;
+    }
+}
+
+form {
+    font-size: $fuente-media;
+
+    @media (min-width: $desktop) {
+        font-size: $fuente-grande;
+    }
+}
+
+h3 {
+    font-size: $fuente-nav;
+
+    @media (min-width: $desktop) {
+        font-size: $fuente-grande;
+    }
+}

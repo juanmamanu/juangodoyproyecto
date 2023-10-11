@@ -15,7 +15,7 @@ $desktopXG: 1200px;
 
 /*TAMAÑOS DE FUENTES*/
 $fuente-nav: 25px;
-$fuente-media: 18px;
+$fuente-media: 15px;
 $fuente-grande: 23px;
 $icono: 40px;
 
@@ -23,9 +23,11 @@ $icono: 40px;
 /*Logo */
 
 @mixin Logo {
-display: block;
-margin: 0 auto;
-width: 800px;
-height: 250px;
-overflow: auto;
+    display: block;
+    margin: 0 auto;
+    width: 100%;      
+    max-width: 800px; 
+    height: auto;     
+    max-height: 250px;
+    overflow: auto;
 }

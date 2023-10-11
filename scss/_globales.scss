@@ -22,6 +22,10 @@ hr.rounded {
 .navbar {
     background-color: $color-secundario;
     font-size: $fuente-nav;
+
+    @media (max-width: $tablet) {
+        font-size: $fuente-media;
+    }
 }
 
 .logo { 
@@ -66,6 +70,14 @@ header {
 }
 
 
+
+
+.whatsapp-button {
+    position: fixed;
+    right: 10px;   // Margen derecho de 10px
+    bottom: 10px;  // Margen inferior de 10px
+    z-index: 9999; // Para que aparezca sobre otros elementos
+}
 
 /* Footer */
 .footer {
