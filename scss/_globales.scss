@@ -47,7 +47,6 @@ hr.rounded {
 }
 
 h1 {
-    background-color:$color-primario;
     color:$color-secundario;
     display: inline-block;
 }
@@ -90,16 +89,6 @@ footer .container {
 }
 
 /* Form styles */
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px; 
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 15px;
-    margin-bottom: 1px;
-    resize: vertical;
-}
 
 .container-opciones label {
     border: solid 1px;
