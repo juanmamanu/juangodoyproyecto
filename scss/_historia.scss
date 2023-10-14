@@ -44,10 +44,12 @@ body {
         .history-item {
             flex-direction: column;
             text-align: center;
+            
+
             p{
                 font-size: $fuente-media;
+            
             }
-
             img {
                 margin: 0;
                 margin-bottom: 15px;
